@@ -32,8 +32,8 @@ public:
     void execute()
     {
 
-        #pragma omp parallel //task parallel ausführen
-        #pragma omp single // ein task pro thread
+        //#pragma omp parallel //task parallel ausführen
+        //#pragma omp single // ein task pro thread
         langford(langford_seq, this -> n);
     }
 

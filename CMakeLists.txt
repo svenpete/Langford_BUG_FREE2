@@ -3,7 +3,7 @@ project(Langford_BUG_FREE)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Langford_BUG_FREE main.cpp LangfordSequentiell.h LangfordParrallel.h LangfordParrallelOMP.h)
+add_executable(Langford_BUG_FREE main.cpp KnSequentiell.h KnParrallelOMP.h)
 find_package("TBB")
 target_link_libraries(Langford_BUG_FREE TBB::tbb)
 
